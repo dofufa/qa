@@ -65,7 +65,7 @@ const re = /\/(\w+)\.html/;
 const tag = document.location.pathname.match(re)[1];
 const fn = `${tag}.xml`;
 
-const el= document.createElement('a');
+const el = document.createElement('a');
 el.href = window.URL.createObjectURL(blob);
 el.download = fn;
 el.click();
