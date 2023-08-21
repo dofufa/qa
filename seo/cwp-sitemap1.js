@@ -1,3 +1,9 @@
+// cwp-sitemap.js
+// creates a page-based XML image sitemap
+
+// Image Sitemaps
+// https://developers.google.com/search/docs/crawling-indexing/sitemaps/image-sitemaps
+
 const arr = [];
 const d = document;
 
