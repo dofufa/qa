@@ -1,4 +1,4 @@
-// cwp-sitemap.js
+// cwp-img-sitemap1.js
 // creates a page-based XML image sitemap
 
 // Image Sitemaps
@@ -10,8 +10,6 @@ const d = document;
 // collect <a> and <img> elements
 const q = d.querySelectorAll('a');
 const r = d.querySelectorAll('img');
-
-// TODO: change .forEach to .filter
 
 // sift <a> elements
 q.forEach( (a) => {
@@ -63,7 +61,7 @@ const data = `
 const blob = new Blob([data], {type: "text/xml"});
 const re = /\/(\w+)\.html/;
 const tag = document.location.pathname.match(re)[1];
-const fn = `${tag}.xml`;
+const fn = `img-${tag}.xml`;
 
 const el = document.createElement('a');
 el.href = window.URL.createObjectURL(blob);
